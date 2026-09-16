@@ -13,6 +13,38 @@ circulation, extracellular matrix organization, and ERK1/ERK2 cascade,
 providing insights into molecular mechanisms underlying breast cancer 
 progression.
 
-## Tools: R, limma, clusterProfiler
+# Introduction
+Breast cancer is one of the most common malignancies worldwide and a 
+leading cause of cancer-related mortality among women. Understanding 
+the molecular mechanisms driving breast cancer development and 
+progression is critical for identifying novel biomarkers and therapeutic 
+targets. Gene expression profiling using microarray technology provides 
+a powerful approach to study genome-wide transcriptional changes between 
+cancerous and normal tissues.
+
+Differential Gene Expression (DGE) analysis enables the identification 
+of genes that are significantly upregulated or downregulated in disease 
+conditions compared to normal controls. In this study, we performed DGE 
+analysis using the GSE42568 microarray dataset, which contains expression 
+profiles of 104 breast cancer samples and 17 normal breast tissue samples. 
+Our goal was to identify key differentially expressed genes and biological 
+pathways associated with breast cancer.
+
+## Methods
+#1. Dataset
+   - Database: NCBI Gene Expression Omnibus (GEO)
+   - Dataset ID: GSE42568
+   - Platform: Affymetrix Human Genome U133 Plus 2.0 Array
+   - Samples: 17 Normal + 104 Tumor breast tissue samples
+## Tools & Packages : 
+   - R version 4.6.1
+   - GEOquery: Data retrieval
+   - limma: DGE Analysis
+   - pheatmap: Heatmap generation
+   - EnhancedVolcano: Volcano plot
+   - clusterProfiler: GO & KEGG enrichment
+   - hgu133plus2.db: Probe ID annotation
+   - org.Hs.eg.db: Gene ID conversion
+
 ## Analysis: Differential Gene Expression
 ## Comparison: Tumor vs Normal Breast Tissue
