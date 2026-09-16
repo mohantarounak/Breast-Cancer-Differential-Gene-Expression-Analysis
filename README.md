@@ -1,2 +1,5 @@
-# Breast-Cancer-Differential-Gene-Expression-Analysis
-Identification of Differentially Expressed Genes in Breast Cancer versus Normal Breast Tissue Using RNA-seq Data
+# Breast Cancer DGE Analysis
+## Dataset: GSE42568
+## Tools: R, limma, clusterProfiler
+## Analysis: Differential Gene Expression
+## Comparison: Tumor vs Normal Breast Tissue
