@@ -70,3 +70,27 @@ pathways associated with breast cancer.
            - GO Biological Process enrichment
            - KEGG Pathway enrichment analysis
 ## Comparison: Tumor vs Normal Breast Tissue
+
+## Result & Discussion
+   ## Analysis Pipeline
+   # 1: Data Loading & Preprocessing
+           - Downloaded GSE42568 series matrix file
+           - Extracted expression matrix and sample metadata
+
+   # 2: DGE Analysis (limma)
+           - Built design matrix (Normal vs Tumor)
+           - Applied linear model fitting (lmFit)
+           - Computed empirical Bayes statistics (eBayes)
+           - Extracted DEGs using topTable (FDR adjusted p-value)
+
+   # 3: Filtering Significant DEGs
+           - Criteria: adj.P.Val < 0.05 and |logFC| > 1.5
+           - Total significant DEGs identified: 3,277
+
+   # 4: Visualization
+           - Volcano plot: LogFC vs adjusted p-value
+           - Heatmap: Top 50 DEGs expression pattern
+
+   # 5: Functional Enrichment Analysis
+           - GO Biological Process enrichment
+           - KEGG Pathway enrichment analysis
