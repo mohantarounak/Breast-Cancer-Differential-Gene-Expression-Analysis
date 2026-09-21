@@ -48,25 +48,25 @@ pathways associated with breast cancer.
 
 ## Analysis: Differential Gene Expression
  # Analysis Pipeline
-   Step 1: Data Loading & Preprocessing
+   ## Step 1: Data Loading & Preprocessing
            - Downloaded GSE42568 series matrix file
            - Extracted expression matrix and sample metadata
 
-   Step 2: DGE Analysis (limma)
+   ## Step 2: DGE Analysis (limma)
            - Built design matrix (Normal vs Tumor)
            - Applied linear model fitting (lmFit)
            - Computed empirical Bayes statistics (eBayes)
            - Extracted DEGs using topTable (FDR adjusted p-value)
 
-   Step 3: Filtering Significant DEGs
+   ## Step 3: Filtering Significant DEGs
            - Criteria: adj.P.Val < 0.05 and |logFC| > 1.5
            - Total significant DEGs identified: 3,277
 
-   Step 4: Visualization
+   ## Step 4: Visualization
            - Volcano plot: LogFC vs adjusted p-value
            - Heatmap: Top 50 DEGs expression pattern
 
-   Step 5: Functional Enrichment Analysis
+   ## Step 5: Functional Enrichment Analysis
            - GO Biological Process enrichment
            - KEGG Pathway enrichment analysis
 ## Comparison: Tumor vs Normal Breast Tissue
