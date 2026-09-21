@@ -94,3 +94,20 @@ pathways associated with breast cancer.
    # 5: Functional Enrichment Analysis
            - GO Biological Process enrichment
            - KEGG Pathway enrichment analysis
+
+## Discussion
+The identified DEGs and enriched pathways suggest significant 
+alterations in cell adhesion, extracellular matrix remodeling, 
+and signaling cascades in breast cancer. The ERK1/ERK2 cascade 
+enrichment is consistent with known MAPK pathway activation in 
+cancer progression. These findings provide potential targets for 
+further investigation in breast cancer research.
+
+## Conclusion
+This study successfully identified 3,277 differentially expressed genes 
+between breast cancer and normal breast tissue using limma-based DGE 
+analysis. GO and KEGG enrichment analyses revealed significant involvement 
+of extracellular matrix organization, cell adhesion, and ERK signaling 
+pathways. These results contribute to our understanding of the molecular 
+landscape of breast cancer and highlight potential biomarker candidates 
+for future research.
